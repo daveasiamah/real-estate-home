@@ -1,3 +1,97 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 1. Use a more-intuitive box-sizing model. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Allow percentage-based heights in the application */
+html,
+body {
+  height: 100%;
+}
+/*  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Remove built-in form typography styles */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+}
+/* 9. Create a root stacking context */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  --container-max-width: 1400px;
+
+  --clr-white: #ffffff;
+  --clr-primary-900: #016450;
+  --clr-primary-400: #098b71;
+  --clr-primary-100: #e6f0ee;
+  --clr-secondary-900: #ff6500;
+  --clr-gold: #f8c251;
+  --clr-blue-dark: #2196f3;
+  --clr-blue-light: #00b1fd;
+
+  --clr-chart-black: #29353b;
+
+  --clr-text-900: #1a1a1a;
+  --clr-text-500: #484848;
+  --clr-text-400: #767676;
+
+  --clr-icon: #707070;
+  --clr-input-border: #c4c4c4;
+
+  --bgc-dark-gray: #707070;
+  --bgc-light-gray: #f8f8f8;
+
+  --bgc-header-bg: var(--bgc-light-gray, #f8f8f8);
+}
