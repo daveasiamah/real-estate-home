@@ -36,6 +36,12 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
+
+  /*additional attributes*/
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
 }
 
 /* 7. Remove built-in form typography styles */
@@ -71,15 +77,25 @@ h3 {
 
 :root {
   --container-max-width: 1400px;
+  --body-background-color: #f7f7f9;
 
-  --clr-white: #ffffff;
+  --f-weight-extra-light: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+  --font-weight-black: 900;
+
   --clr-primary-900: #016450;
   --clr-primary-400: #098b71;
   --clr-primary-100: #e6f0ee;
   --clr-secondary-900: #ff6500;
-  --clr-gold: #f8c251;
   --clr-blue-dark: #2196f3;
   --clr-blue-light: #00b1fd;
+  --clr-gold: #f8c251;
+  --clr-white: #ffffff;
 
   --clr-chart-black: #29353b;
 
